@@ -8,3 +8,63 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@5cdc94c
 2024.05.06 00:58:12 INFO  Shutting down server
 2024.05.06 00:58:12 INFO  shutting down Metals
 2024.05.06 00:58:12 INFO  Exiting server
+2024.05.07 08:19:46 INFO  Started: Metals version 1.3.0+50-f970cfe1-SNAPSHOT in folders 'D:\SCALA\udemy-scaka-beginners' for client Visual Studio Code 1.89.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@7a2f1238]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@67ff4ee]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7a2f1238]
+2024.05.07 08:19:47 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.07 08:41:43 INFO  Shutting down server
+2024.05.07 08:41:43 INFO  shutting down Metals
+2024.05.07 08:41:43 INFO  Exiting server
+2024.05.07 20:44:10 INFO  Started: Metals version 1.3.0+50-f970cfe1-SNAPSHOT in folders 'D:\SCALA\udemy-scaka-beginners' for client Visual Studio Code 1.89.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@670598b8]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@33363c44]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@670598b8]
+2024.05.07 20:44:11 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.07 21:29:38 INFO  running 'usr/local/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.05.07 21:29:38 ERROR Running process 'usr/local/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall' failed
+java.io.IOException: Cannot run program "usr/local/bin/sbt" (in directory "D:\SCALA\udemy-scaka-beginners"): CreateProcess error=2, O sistema não pode encontrar o arquivo especificado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:46)
+	at scala.meta.internal.builds.ShellRunner.run(ShellRunner.scala:98)
+	at scala.meta.internal.builds.BloopInstall.runArgumentsUnconditionally(BloopInstall.scala:75)
+	at scala.meta.internal.builds.BloopInstall.$anonfun$runUnconditionally$1(BloopInstall.scala:49)
+	at scala.meta.internal.builds.BloopInstallProvider.bloopInstall(BloopInstallProvider.scala:24)
+	at scala.meta.internal.builds.BloopInstallProvider.bloopInstall$(BloopInstallProvider.scala:19)
+	at scala.meta.internal.builds.SbtBuildTool.bloopInstall(SbtBuildTool.scala:23)
+	at scala.meta.internal.builds.BloopInstall.runUnconditionally(BloopInstall.scala:46)
+	at scala.meta.internal.builds.BloopInstall.$anonfun$runIfApproved$3(BloopInstall.scala:148)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, O sistema não pode encontrar o arquivo especificado
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:46)
+	at scala.meta.internal.builds.ShellRunner.run(ShellRunner.scala:98)
+	at scala.meta.internal.builds.BloopInstall.runArgumentsUnconditionally(BloopInstall.scala:75)
+	at scala.meta.internal.builds.BloopInstall.$anonfun$runUnconditionally$1(BloopInstall.scala:49)
+	at scala.meta.internal.builds.BloopInstallProvider.bloopInstall(BloopInstallProvider.scala:24)
+	at scala.meta.internal.builds.BloopInstallProvider.bloopInstall$(BloopInstallProvider.scala:19)
+	at scala.meta.internal.builds.SbtBuildTool.bloopInstall(SbtBuildTool.scala:23)
+	at scala.meta.internal.builds.BloopInstall.runUnconditionally(BloopInstall.scala:46)
+	at scala.meta.internal.builds.BloopInstall.$anonfun$runIfApproved$3(BloopInstall.scala:148)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.07 21:29:38 INFO  time: ran 'sbt bloopInstall' in 40ms
+2024.05.07 21:29:38 ERROR sbt command failed: usr/local/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall
+2024.05.07 21:33:02 INFO  Shutting down server
+2024.05.07 21:33:02 INFO  shutting down Metals
+2024.05.07 21:33:02 INFO  Exiting server
