@@ -2,8 +2,11 @@ package lectures.part1basics
 
 object Expressions extends App{
 
+  //Instructions(something you ask the computer to do) VS Expressions(something that has value)
+
+  // IF EXPRESSION
   val aCondition = false
-  val aConditionedValue = if(aCondition) 5 else 3 // IF EXPRESSION
+  val aConditionedValue = if(aCondition) 5 else 3
   println(aConditionedValue)
 
   var aVariable = 2
