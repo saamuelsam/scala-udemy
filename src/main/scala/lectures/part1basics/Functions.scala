@@ -10,15 +10,15 @@ object Functions extends App{
   def aParameterlessFunction(): Int = 42
   println(aParameterlessFunction())
 
+  //RECURSIVE FUNCTION //FUNCTIONAL PROGRAMMING
+  // WHEN YOU NEED LOOPS, USE RECURSION.
   def aReapeatedFunction(aString: String, n: Int): String = {
     if (n == 1) aString
     else aString + aReapeatedFunction(aString, n - 1)
   }
-
   println(aReapeatedFunction("hello", 4))
 
-  //RECURSIVE FUNCTION //FUNCTIONAL PROGRAMMING
-  // WHEN YOU NEED LOOPS, USE RECURSION.
+
   def aFunctionWithSideEffects(aString: String): Unit = println(aString)
 
   def aBigFunction(n: Int): Int = {
